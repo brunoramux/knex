@@ -11,6 +11,13 @@ module.exports = {
       database: "bruno",
       user: "postgres",
       password: "92727340"
+    },
+    migrations: {
+      tableName: 'knex_migrations',
+      directory: `${__dirname}/src/database/migrations ` //definindo o diretorio onde as migrations ficarao
+    },
+    seeds: {
+      directory: `${__dirname}/src/database/seeds `
     }
   }
 
